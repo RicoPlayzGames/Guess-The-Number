@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="CSS/GTN.css">
+</head>
+<body class="light">
+    <h1>Guess the Number</h1>
+    <p id="instructions">I'm thinking of a number between 1 and 100. Try to guess it!</p>
+
+    <input type="number" id="guess" placeholder="Enter your guess" max="100" min="1">
+    <button id="submit">Guess</button>
+
+    <p id="result"></p>
+    <p id="currentAttempt">Current attempt: [0][0]</p>
+    <p id="totalGuesses">Total guesses: 0</p>
+    <p id="correctGuesses">Correct guesses: 0</p>
+    <p id="gamesPlayed">Games played: 0</p>
+    <p id="bestAttempt">Fastest attempt: N/A</p>
+
+    <button id="tryAgain">Try Again</button>
+    <button id="themeToggle" class="theme-toggle">Toggle Theme</button>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="JS/GTN.js"></script>
+</body>
+</html>

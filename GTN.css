@@ -1,0 +1,159 @@
+/* Basic styles for the body and text */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title text style */
+h1 {
+    color: #0000FF; /* Blue color for "Guess the Number" */
+    font-size: 2em;
+}
+
+/* Instructions text style */
+#instructions {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #6a5acd; /* Slate blue for better visibility */
+}
+
+/* Input field style */
+#guess {
+    width: 80%;
+    max-width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #d3d3d3; /* Grayish background */
+    border: 1px solid #a84646;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Submit button style */
+#submit {
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hover effect for submit button */
+#submit:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Result text style */
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #90EE90; /* Light green color for result */
+}
+
+/* Current attempt text style */
+#currentAttempt {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #32CD32; /* Green color for current attempt */
+}
+
+/* Total guesses, correct guesses, and games played text styles */
+#totalGuesses,
+#correctGuesses,
+#gamesPlayed {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Fastest attempt text style */
+#bestAttempt {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #FFCC80; /* Softer orange for fastest attempt */
+    font-weight: bold;
+}
+
+/* Light and dark mode styles for the main statistics */
+.light #totalGuesses,
+.light #correctGuesses,
+.light #gamesPlayed {
+    color: #000000; /* Black in light mode */
+}
+
+.dark #totalGuesses,
+.dark #correctGuesses,
+.dark #gamesPlayed {
+    color: #ffffff; /* White in dark mode */
+}
+
+/* Try Again button style */
+#tryAgain {
+    background-color: #4CAF50; /* Green background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Hover effect for Try Again button */
+#tryAgain:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Theme toggle button style */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for theme toggle button */
+.theme-toggle:hover {
+    background-color: #3e8e41;
+}
+
+/* Light theme styles */
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark theme styles */
+.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #guess {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    #submit, #tryAgain, .theme-toggle {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    #instructions, #result, #currentAttempt, #totalGuesses, #correctGuesses, #gamesPlayed, #bestAttempt {
+        font-size: 16px;
+    }
+}
